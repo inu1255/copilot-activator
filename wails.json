@@ -1,0 +1,21 @@
+{
+  "$schema": "https://wails.io/schemas/config.v2.json",
+  "name": "copilot-activator",
+  "outputfilename": "copilot-activator",
+  "frontend:install": "",
+  "frontend:build": "",
+  "frontend:dev:watcher": "",
+  "frontend:dev:serverUrl": "",
+  "wailsjsdir": "../src",
+  "info": {
+    "companyName": "宇智科技",
+    "productName": "copilot激活器",
+    "productVersion": "1.0.0",
+    "copyright": "www.quan2go.com",
+    "comments": ""
+  },
+  "author": {
+    "name": "inu1255",
+    "email": "inu1255@qq.com"
+  }
+}
