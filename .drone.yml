@@ -1,0 +1,34 @@
+kind: pipeline
+name: linux-amd64
+# The root of your git repository, also called the **workspace**, is shared by all steps in your pipeline
+platform: # configure the target operating system and architecture and routes the pipeline to the appropriate runner
+  arch: amd64
+  os: linux
+steps: # steps are defined as a series of shell commands
+- name: install wails
+  image: golang:1.21 # Each step must therefore define the Docker **image** used to create the container.
+  # **Plugins** are docker containers that encapsulate commands, and can be shared and re-used in your pipeline.
+  commands: # The commands are executed inside the root directory of your git repository.
+  - go install github.com/wailsapp/wails/v2/cmd/wails@latest
+  
+- name: build
+  image: golang:1.21
+  commands:
+  - wails build -s --platform linux/amd64 -o ${DRONE_REPO_NAME}
+- name: publish
+  image: plugins/gitea-release
+  settings: # inputs for plugin as environment variables
+    api_key: $APIKEY
+    base_url: http://gitea.inu1255.cn
+    files: build/bin/*
+  environment:
+    APIKEY:
+      from_secret: gitea_api_key
+  when: # The when section provides the ability to conditionally limit the execution of steps at runtime.
+    event: 
+    - push
+    - tag
+trigger: # receive webhook from scm(gitlab/github), filter by bransh/ref/event
+  event:
+  - push
+  - tag
