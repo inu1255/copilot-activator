@@ -1,7 +1,9 @@
 name: Wails build
 
 on:
-  push
+  push:
+    tags:
+      - '*'
 
 env:
   # Necessary for most environments as build failure can occur due to OOM issues

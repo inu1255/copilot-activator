@@ -1,19 +1,9 @@
-# README
+# copilot激活器
 
-## About
+## 使用方法
 
-This is the official Wails Vue-TS template.
+1. 登录激活器
+2. 点击激活当前设备
+3. 设备首次激活需要编辑器全部退出后重启才会生效，如果还是不行可以尝试重启一下电脑
+4. Vs Code插件首次需要点击一下激活，如果插件自动更新，启动激活器会自动激活
 
-You can configure the project by editing `wails.json`. More information about the project settings can be found
-here: https://wails.io/docs/reference/project-config
-
-## Live Development
-
-To run in live development mode, run `wails dev` in the project directory. This will run a Vite development
-server that will provide very fast hot reload of your frontend changes. If you want to develop in a browser
-and have access to your Go methods, there is also a dev server that runs on http://localhost:34115. Connect
-to this in your browser, and you can call your Go code from devtools.
-
-## Building
-
-To build a redistributable, production mode package, use `wails build`.
