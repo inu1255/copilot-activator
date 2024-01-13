@@ -1,5 +1,7 @@
 # copilot激活器
 
+可前往[蓝奏云](https://wwi.lanzoup.com/b083uyvob)或[release](https://github.com/inu1255/copilot-activator/releases)页面下载
+
 ## 适配情况
 
 1. VsCode支持Chat、Remote - SSH、WSL
