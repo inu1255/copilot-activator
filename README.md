@@ -5,7 +5,7 @@
 ## 适配情况
 
 1. VsCode支持Chat、Remote - SSH、WSL
-2. JetBrain全家桶 (包括IDEA、PyCharm、WebStorm、Android Studio、PhpStorm、RubyMine、AppCode、Clion、DataGrip、Rider等)
+2. JetBrain全家桶支持Chat (包括IDEA、PyCharm、WebStorm、Android Studio、PhpStorm、RubyMine、AppCode、Clion、DataGrip、Rider等)
 3. VS2022
 4. XCode
 5. Vim
