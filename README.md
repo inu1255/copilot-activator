@@ -25,5 +25,5 @@
 
 ## 咨询与合作
 
-[微信客服](https://work.weixin.qq.com/kfid/kfc98fa0b32f45ba5ef)
+QQ群: 781523739
 
